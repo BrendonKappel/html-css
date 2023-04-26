@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgba(211, 211, 211, 0.377);
+
+        }
+        header {
+            background-color: rgb(255, 255, 255);
+            padding: 10px;
+            margin:  10px;
+        }
+
+        h1 {
+            text-align: center;
+            padding: 5px;
+            margin: 0;
+            text-shadow: 6px 2px 6px rgba(0, 0, 0, 0.425);
+
+            
+        }
+
+        nav {
+            background-color: gray;
+            padding: 5px;
+            box-shadow: 2px 3px 7px 0px rgba(0, 0, 0, 0.74);
+
+           
+            
+            
+        }
+
+        nav > a {
+            margin-right: 90px;  
+            font-weight: bold;
+            text-decoration: none;
+            color: white;
+        }
+
+        nav > a:hover {
+            text-decoration: underline;
+        }
+
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border: 2px solid black;
+            border-radius: 10px 0px;
+            box-shadow: 3px 2px 12px 0px rgba(0, 0, 0, 0.438);
+
+        }
+
+        section {
+            background-color:rgba(211, 211, 211, 0.699)
+        }
+
+        article > aside.autor {
+            background-color: rgba(128, 128, 128, 0.651);
+        }
+    
+        footer {
+            color: white;
+            background-color: black;
+            text-align: center;
+            padding: 4px;
+        }
+
+        footer > p {
+            margin: 0px;
+        }
+        p.text {
+            text-align: justify;
+            padding: 3px;
+            text-indent: 15px;
+
+        }
+
+        h2 {
+            padding: 5px;
+        }
+
+        div#bola {
+            height: 100px;
+            width: 100px;
+            background-color: rgb(255, 0, 0);
+            margin: 10px;
+            border-radius: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Site exemplo</h1>
+        <nav>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+            <a href="#">link</a>
+        </nav>
+    </header>
+    <main>
+        <section id="noticias">
+            <article>
+                <h2>noticias</h2>
+                <p class="text">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam tenetur et quam, dolorem eaque, voluptas ducimus quia impedit tempora a delectus. Tempora dolorum dolorem ea velit optio. Nisi, culpa? Aspernatur!</p>
+            </article>
+            <article>
+                <h2>noticias da sua regiao</h2>
+                <p class="text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis quae aliquam adipisci veniam praesentium molestiae architecto incidunt iusto omnis quasi. Asperiores, est animi. Sapiente veniam corrupti non odio voluptatum veritatis.</p>
+                <aside class="autor">
+                    <p>escrito por joãozinho</p>
+                </aside>
+            </article>
+            
+        </section>
+        <section id="fofocas">
+            <article>
+                <h2>fofocas</h2>
+                <p class="text">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore nobis, officia necessitatibus error similique consectetur, cumque consequatur magnam mollitia corrupti repudiandae eius modi saepe aspernatur, quia ea odio commodi aperiam!</p>
+                <aside class="inline"> <img src="https://media.istockphoto.com/id/693210524/pt/vetorial/pop-art-style-comics-panel-gossip-girl-whispering-secret-in-ear-word-of-mouth-vector.jpg?s=612x612&w=0&k=20&c=Z98DjM0p5uh7GFFJiDfOSVCbq6bNpDIregtfAzoKpXs=" alt="imagem da fofoca" width="200"></aside>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <p>Brendon kappel - escritor da BBC</p>
+        <p>contatos: BrendonKappel@gmail.com</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>midias em HTML</title>
+</head>
+<body>
+    <h1>Imagens dinamicas</h1>
+    <p>Tente abrir esse site em outros dispositivos ou aumente e diminua o tamanho do navegador</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-P.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-M.png" type="image/png">
+        <img src="imagens/foto-G.png" alt="imagem flexível">
+    </picture>
+    <h1>reproduzindo audios</h1>
+    <p>vamos aprender a reproduzir audios em html</p>
+    <audio preload="metadata" autoplay controls loop>
+        <source src="musica_jogo1.mp3" type="audio/mpeg">
+        <source src="musica_jogo1.ogg" type="audio/ogg">
+        <source src="musica_jogo1.wav" type="audio/wav">
+        
+    </audio>
+    
+
+    
+</body>
+</html>
