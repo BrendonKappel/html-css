@@ -1,0 +1,23 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+}
+
+:root {
+    --cor0: black;
+    --cor1: white;
+
+    --fonte-escrita: 'Sriracha', Arial, Sans-serif;
+    --fonte-destque: 'Passion One', serif; 
+}
+
+h1 {
+    font-family: var(--fonte-destque);
+}
