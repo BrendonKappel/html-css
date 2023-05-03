@@ -1,0 +1,99 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Passion+One&display=swap');
+
+@media screen and (max-width: 400px) {
+    body {
+      font-size: 12px;
+    }
+  }
+
+:root {
+    --fonte-poema: 'Sriracha', cursive;
+    --fonte-titulo: 'Passion One', cursive;
+    --fonte-padrao: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+    text-align: center;
+    background-color: black;
+    color: white;
+}
+
+header > h1 {
+    font-family: var(--fonte-titulo);
+    font-variant: small-caps;
+    padding-top: 50px;
+    font-size: 5em;
+}
+
+header > p {
+    font-family: var(--fonte-padrao);
+    font-size: 1.5em;
+    padding-bottom: 50px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+section {
+    font-family: var(--fonte-poema);
+    font-size: 2em;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    padding-left: 30px;
+    line-height: 2em;
+}
+
+section > p {
+    padding-top: 2em;
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+}
+
+section.imagem {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+}
+
+section.imagem > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.404);
+    padding: 10px;
+    text-shadow: 3px 2px 1px black
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer {
+    background-color: black;
+    color: white; 
+    text-align: center;
+    font-size: 1.2em;
+}
