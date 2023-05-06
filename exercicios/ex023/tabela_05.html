@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+            
+        }
+
+        caption {
+            font-weight: bolder;
+            padding: 8px;
+            font-size: 1.3em;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        .destaque {
+            background-color: aqua;
+        }
+
+        col.amarelo {
+            background-color: yellow;
+        }
+
+        col.vermelho {
+            background-color: red;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Exercícios de tabela</h1>
+    <table>
+        <colgroup>
+            <col class="vermelho">
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            
+        </colgroup>
+        <caption>Cadastro</caption>
+        <thead>
+            <tr>
+                <th scope="col">Nome</th>
+                <th scope="col">sexo</th>
+                <th scope="col">idade</th>
+                <th scope="col">profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Ana maria</td>
+                <td>F</td>
+                <td>35</td>
+                <td>Porfessora</td>
+            </tr>
+            <tr>
+                <td>Gustavo</td>
+                <td>M</td>
+                <td>20</td>
+                <td>Programador</td>
+            </tr>
+            <tr>
+                <td>Pedro</td>
+                <td>M</td>
+                <td>30</td>
+                <td>Jornalista</td>
+            </tr>
+            <tr>
+                <td>Paula</td>
+                <td>F</td>
+                <td>50</td>
+                <td>vendedora</td>
+            </tr>
+            <tr>
+                <td>Fernanda</td>
+                <td>F</td>
+                <td>18</td>
+                <td>Estudante</td>
+            </tr>
+            <tr>
+                <td>José</td>
+                <td>M</td>
+                <td>42</td>
+                <td>Motorista</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>
